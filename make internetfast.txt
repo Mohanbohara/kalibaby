@@ -1,0 +1,11 @@
+How to check internet speed on your PC using cmd:
+Netsh int tcp show global and press Enter.
+Netsh int tcp set chimney=enabled and press Enter.
+Netsh int tcp set global autotuninglevel=normal and press Enter.
+Netsh int set global congestionprovider=ctcp and press Enter.
+Now type ipconfig /flushdns and press enter.
+Type netsh int ip reset c:\resetlog.txt and press Enter.
+type ipconfig
+ (by ipconfig command you  found defaultgateway ip )
+
+type ping –t 172.20.10.1(this ip address must be default gate way ip when you get after run before ipconfig)
